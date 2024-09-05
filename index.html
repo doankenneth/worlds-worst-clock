@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World's Worst Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav-header">
+        <div class="header-container">
+            <h1 class="page-title"> THE WORLD'S WORST CLOCK</h1>
+            <h1 class="menu-icon" onclick="toggleMenu()">&#9776;</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#Welcome">Welcome</a></li>
+            <li><a href="#Vision">Vision</a></li>
+            <li><a href="#FAQ">FAQ</a></li>
+            <li><a href="#Reviews">Reviews</a></li>
+        </ul>
+    </div>
+    <div class="clock-header"><h1 id="clock"></h1></div>
+
+    <div class="scrollable-content">
+        
+        <section id="Welcome">
+            <h2>Welcome</h2>
+            <div class="description">
+                <p>Have you ever wanted to know what time it definitely isn't?</p>
+                <p>Now you can! Using my amazing algorithm <inline style = "font-size: .5em;">(that I spent two minutes on)</inline>, this website will always display the incorrect time.</p>
+                <p>And just in case you thought it could maybe be helpful once, for every real world minute, 
+                    <inline style = "font-weight: bold; white-space: nowrap;">The World's Worst Clock</inline> will automatically change to a completely random time, ensuring an incorrect reading every time.</p>
+                <p>You know that saying "A broken clock is right twice a day?" Well, unfortunately for you, I made sure that was impossible.</p>
+                <p>From an entire 23 hour difference to just being off by just a minute, 
+                    <inline style = "font-weight: bold; white-space: nowrap;">The World's Worst Clock</inline> is dedicated to giving you false information and have a small but noticible negative impact in your day.</p>
+                <p>Watch in amazement as the seconds count up before switching between completely useless information to new information that is different but equally unhelpful.</p>
+                <p>Whether you're bored and willing to watch anything, have literally nothing else better to do, 
+                    or just want to defy Father Time in a futile attempt to resist the natural order of the universe like the heretic you are, I welcome you.</p>
+                <p>Have fun! I literally don't know how you would, but have fun!</p>
+            </div>
+        </section>
+        <hr>
+
+        <section id="Vision">
+            <div class="shifted-section">
+                <div class="image"><img src="portrait.png" alt= "Artist's Rendition of Developer"></div>
+                <div>
+                    <h2>Vision</h2>
+                    <div class="description">
+                        <p>Hi, I'm Kenneth, the absolute idiot behind <inline style = "font-weight: bold; white-space: nowrap;">The World's Worst Clock</inline></p>
+                        <p>When my journey as a web developer began 5 minutes ago, I wanted to create a grand website that could act as an inspiration for other web designers and creators all over the world. </p>
+                        <p>And then when I couldn't figure out how to do any of that, I then thought to myself: “What would be completely useless?” </p>
+                        <p>So I sought to create the most useless, pointless, worthless website to ever exist. A webpage that people would audibly ask: "Why the heck would I use that?"</p>
+                        <p>But since Bing already exists, I made this instead.</p>
+                        <p>Now no matter who you are in the world, we can now agree on just the one thing: This clock sure is wrong.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr> 
+        
+        <section id="FAQ">
+            <h2>FAQ</h2>
+            <div class="description">
+                <h4>Q: How does the Clock Work?</h4>
+                <p>When you open the webpage, it connects directly to your system clock and automatically changes the time by a random amount within 1 minute and 23 hours and 59 minutes, 
+                    making it mathmatically impossible for it to display the correct time.</p>
+                <p>This guarantees that this clock will provide absolutely meaningless information 100% of the time.</p>
+                <br>
+                <h4>Q: What's the coding behind the Clock?</h4>
+                <p>The clock uses JavaScript's Built-In Math Class to provide a random value via the Random method and 
+                    adds it to an element containing the current time, created using JavaScript's API, which accesses the system's current time.
+                    Then, by setting a global timeout delay, the function is set to run every 1000 miliseconds, constantly rechecking the date element and uses an if statement to
+                    determine whether a minute as passed, to which it re-randomizes the value added ensure a different randomized value every minute.
+                </p>
+                <p>If you understood that, please explain it to me, I have no idea what any of that meant.</p>
+                <br>
+                <h4>Q: How long did it take to build this?</h4>
+                <p>Well I'm not sure. I don't know if it was because I blacked out after the seventh Monster or brain damage from banging my head against the keyboard, but I can't seem to remember anything from the past week</p>
+                <br>
+                <h4>Q: Where can I ask more questions? Or possibly just berate you.</h4>
+                <p>You can find us (me) at theworldsworstclock@gmail.com for any questions regarding the World's Worst Clock, it's creation, and my mental sanity. No, that's not a real email, but you can still send something to it. It'd be pretty funny.</p>
+                <br>
+                <h4>Q: What can I use this Clock for?</h4>
+                <p>That's a great question.</p>
+            </div>
+        </section>
+        <hr>
+        
+        <section id="Reviews">
+            <h2 style = "text-align: center;">Reviews</h2>
+            <p style = "text-align:center">Check out these satisfied visitors!</p>
+            <div class="carousel">
+                <div class="arrow" id="prev">&#9664;</div>
+                <div class="review-box" id="reviewBox" >
+                    <div id="reviewText" style="font-style: italic">Review 1</div>
+                    <div class="stars" id="stars" style="margin-top: 10px;">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+                <div class="arrow" id="next">&#9654;</div>
+            </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer-text">
+            <p>The World's Worst Clock is not trademarked so please don't steal it. Pretty Please</p>
+            <p>The World's Worst Clock was made in collaboration with Microsoft's CoPilot AI. And by that I mean
+                I blatantly copy and pasted code
+            </p>
+            <p>The World's Worst Clock has been verified by no one because Guinness won't return my calls</p>
+            <p>The World's Worst Clock By Kenneth Doan (unfortunately)</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
