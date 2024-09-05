@@ -63,7 +63,7 @@ const reviews = [
     { text: "\"It's right there in black and white and a mildly contrasting gray.\"", rating: 4 },
     { text: "\"I'm sure it works in another timeline.\"", rating: 5 },
     { text: "\"I like to use this clock to remind myself of the meaninglessness of human constructs of time. What even is a second anyway? The concept of a minute is meaningless beyond our own perception giving it meaning. Very nice. \"", rating: 4 },
-    { text: "\"This clock is like my husband, except it KNOWS it's always wrong, and I admire that self-awareness.\"", rating: 1 },
+    { text: "\"This clock is like my husband, except it KNOWS it's always wrong, and I admire that self-awareness.\"", rating: 5 },
     { text: "\"...What am I supposed to do with this?\"", rating: 1 }
 ];
 let currentIndex = 0;
